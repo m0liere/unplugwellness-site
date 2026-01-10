@@ -1,46 +1,23 @@
-# Astro Starter Kit: Basics
+# Unplug Wellness — Astro Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+A modern, high-performance web presence for **Unplug Wellness**, built with a focus on speed, aesthetics, and secure infrastructure. This project serves as both a business platform and a showcase of cutting-edge AI-assisted development workflows.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tech Stack
 
-## 🚀 Project Structure
+* **Framework:** [Astro](https://astro.build/) (Static Site Generation for maximum performance)
+* **UI Library:** React / Tailwind CSS
+* **Components:** Radix UI & Framer Motion (for accessible, smooth interactions)
+* **Forms:** Web3Forms API with secure Environment Variable integration
+* **Deployment:** Netlify (CI/CD via GitHub)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🤖 AI-Driven Development Workflow
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+* **v0 (Vercel):** Utilized for initial UI/UX generation and rapid prototyping of the design system and layout components.
+* **Cursor:** Used as the primary IDE to refine the TypeScript logic, manage the project structure, and handle complex component interactions.
+* **Gemini (Google):** Served as the Lead Architect/Thought Partner for infrastructure decisions, DNS management, secure API handling, and deployment strategy.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Infrastructure & Security
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+* **DNS Management:** Domain transferred to Namecheap with custom BasicDNS configuration to support professional email aliasing (`hello@unplugwellness.com`).
+* **Security:** Sensitive API keys (Web3Forms) are managed via environment variables to ensure zero-exposure in public source control.
+* **Performance:** Achieved near-perfect Lighthouse scores by leveraging Astro's "islands architecture" and asset optimization.

@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* This defines your specific "Unplug" brand colors */
+  --color-background: #0d130d;
+  --color-accent-primary: #7caf7c;
+  --color-accent-secondary: #5e8c5e;
+  --color-muted-text: #94a3b8;
+}
+
+/* Base styles to ensure your dark theme looks right from the start */
+:root {
+  background-color: var(--color-background);
+  color: white;
+  font-family: sans-serif; /* You can change this to your preferred font later */
+}
