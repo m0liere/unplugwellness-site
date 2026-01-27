@@ -12,5 +12,5 @@
 :root {
   background-color: var(--color-background);
   color: white;
-  font-family: sans-serif; /* You can change this to your preferred font later */
+  font-family: 'Segoe UI'; /* You can change this to your preferred font later */
 }

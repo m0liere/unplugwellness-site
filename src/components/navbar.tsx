@@ -13,23 +13,25 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unplug-white-cropped-4xq9eej3r9eWGpoAFU7SfXVHduYvef.png" 
-            alt="Unplug Wellness" 
-            className="w-auto max-w-[150px] md:max-w-[200px] h-auto block"
-          />
+          <a href="/">
+            <img 
+              src="/unplugwithroei-white.png" 
+              alt="Unplug Wellness" 
+              className="w-auto max-w-[150px] md:max-w-[200px] h-auto block"
+            />
+          </a>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#story" className="text-white hover:text-accent-primary transition-colors">
+          <a href="/#story" className="text-white hover:text-accent-primary transition-colors">
             About
           </a>
-          <a href="#challenge" className="text-white hover:text-accent-primary transition-colors">
-            The Challenge
+          <a href="/#services" className="text-white hover:text-accent-primary transition-colors">
+            Services
           </a>
-          <a href="#work" className="text-white hover:text-accent-primary transition-colors">
-            Work with me
+          <a href="/#challenge" className="text-white hover:text-accent-primary transition-colors">
+            The Challenge
           </a>
           <a href="https://unplugwithroei.substack.com" className="text-white hover:text-accent-primary transition-colors">
             Substack
@@ -56,13 +58,13 @@ export function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-background border-t border-border px-4 py-4 space-y-4">
-          <a href="#story" className="block text-white hover:text-accent-primary transition-colors">
+          <a href="/#story" className="block text-white hover:text-accent-primary transition-colors">
             About
           </a>
-          <a href="#challenge" className="block text-white hover:text-accent-primary transition-colors">
+          <a href="/#challenge" className="block text-white hover:text-accent-primary transition-colors">
             The Challenge
           </a>
-          <a href="#work" className="block text-white hover:text-accent-primary transition-colors">
+          <a href="/#work" className="block text-white hover:text-accent-primary transition-colors">
             Work with me
           </a>
           <ContactPopup>

@@ -9,7 +9,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/mountains-italy.jpg")',
+          backgroundImage: 'url("/placeholder-roei.jpg")',
         }}
       >
         <div className="absolute inset-0 bg-black/40" />
@@ -17,7 +17,7 @@ export function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 text-center max-w-3xl px-4"
+        className="relative z-10 text-center max-w-3xl px-4 mt-40"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -28,7 +28,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Reclaim your body, mind, and soul.
+          Reclaim your body.
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-muted leading-relaxed text-balance"
@@ -36,7 +36,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Electronics recharge by plugging in, humans recharge by unplugging. We are humans, let&apos;s unplug together.
+          Every day we plug into our workstations and our body adapts with poor posture. Unplug from your desk with me and we will fix it together.
         </motion.p>
       </motion.div>
     </section>

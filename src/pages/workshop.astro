@@ -1,0 +1,45 @@
+<!-- ---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/navbar';
+import { ServicePage } from '../components/ServicePage';
+import { Footer } from '../components/footer';
+
+const workshopData = {
+  title: "Corporate Wellness Workshop",
+  subtitle: "Movement and Resilience for the Modern Workforce",
+  description: "In 6 hours over 2 days, your team will learn to reverse the physical and mental toll of high-pressure desk work.",
+  sectiontitle1: "The Curriculum",
+  sectiontitle2: "Outcomes",
+  sectiontitle3: "Logistics",
+
+  features: [
+    { 
+      title: "Day 1: Body Mechanics & Movement Foundation", 
+      description: "• Ergonomics Education: The science of desk setup—monitor height, keyboard distance, and why 'sit up straight' doesn't work.\n• Intro to Desk Yoga: Targeted movements that reverse forward head posture and release hip flexors.\n• 60-Min Tailored Practice: Full-body practice addressing neck tension and lower back pain." 
+    },
+    { 
+      title: "Day 2: Mental Resilience & Integration", 
+      description: "• Mindfulness Sandbox: Practical tools for setting boundaries and preventing burnout.\n• Meditation for Stress: Evidence-based techniques to regulate the nervous system under deadline pressure.\n• 60-Min Integrated Practice: Building the daily toolkit your team can use independently." 
+    },
+    {
+      title: "Who This Is For",
+      description: "Ideal for tech teams and remote-first companies where employees work 6-10+ hours at desks. Best for groups of 8-20 participants to allow for personalized ergonomic attention."
+    }
+  ],
+  outcomes: [
+    "Understand biomechanics causing pain (and how to reverse it)",
+    "Adjust workstations optimized to reduce strain",
+    "Targeted stretches for immediate relief",
+    "Breathwork techniques for stress regulation",
+    "Build a personal daily practice (5-15 mins)",
+    "Reduced pain-related productivity loss & higher energy"
+  ],
+  logistics: "Format: 2 consecutive days or split across 2 weeks (3 hours/day).\n\nIncludes: Workstation assessments, printed guides, and follow-up resources.\n\nInvestment: Contact for pricing. Wellness stipend or professional development budget eligible."
+};
+---
+
+<Layout title="Workshops | Unplug Wellness">
+  <Navbar client:load />
+  <ServicePage client:load {...workshopData} />
+  <Footer client:load showCTA={false} />
+</Layout> -->

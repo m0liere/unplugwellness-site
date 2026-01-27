@@ -2,26 +2,38 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Zap, BookOpen, MonitorPlay } from "lucide-react"
+import { Zap, BookOpen, MonitorPlay, PersonStanding } from "lucide-react"
+import { ContactPopup } from "./ContactPopup"
 
 const services = [
   {
+    icon: PersonStanding,
+    title: "Posture Coaching",
+    description: "Our workstations make our bodies adapt to the desk and computer and give us poor posture. My posture coaching sessions help reverse that. Learn exactly how your workstation is impacting your body and the movements and stretches to fix the damage.",
+    image: "/evolution-of-deskman.png",
+    href: "/yoga"
+  },
+  {
     icon: Zap,
-    title: "Yoga Sessions",
-    description: "Give Your Team 30-60 Minutes to Reset Their Bodies and Minds. Mindful yoga sessions designed for desk workers: reduce pain, sharpen focus, and prevent burnout. No experience required.",
+    title: "Office Yoga",
+    description: "Mindful yoga sessions designed for desk workers to improve their posture, tailored for your team. Help your employees prevent pain, discomfort, and injury and reconnect to their body and breath. No experience required. Virtual or in-person.",
     image: "/yoga-class-wellness.jpg",
+    href: "/yoga"
   },
   {
     icon: BookOpen,
     title: "Wellness Workshop",
-    description: "Stop Losing Productivity to Desk Pain and Burnout. A 2-day workshop that teaches your team tools to prevent chronic pain, sharpen focus, and build sustainable work habits—before small problems become serious injuries.",
+    description: "A 2-day workshop that teaches your team tools to build sustainable work habits for optimal physical and mental health.\nDay 1: Musculoskeletal Health - Eronomics education and yoga for desk workers.\nDay 2: Mental Health - Mindfulness breathwork and meditation for stress reduction and burnout prevention.\nVirtual or in-person.",
     image: "/wellness-workshop-group.jpg",
+    href: "/workshop"
   },
   {
     icon: MonitorPlay,
-    title: "Ergonomics",
-    description: "Fix the Setup Before It Breaks the Body. Certified ergonomics assessments that prevent desk pain before it becomes chronic injury. Individual workstation evaluations or team education sessions—virtual or in-person.",
+    title: "Ergonomics Education",
+    description: "Fix the setup before it breaks the body. Certified ergonomics assessments to adjust workstations for preventing desk pain before it becomes chronic injury. Individual evaluations or team education sessions. Virtual or in-person.",
     image: "/ergonomic-workspace-setup.jpg",
+    href: "#services",
+    buttonText: "Coming Soon"
   },
 ]
 
@@ -49,7 +61,7 @@ export function Services() {
   }
 
   return (
-    <section id="about" className="py-24 bg-background px-4 md:px-6">
+    <section id="services" className="py-24 bg-background px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -61,9 +73,10 @@ export function Services() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">Services</h2>
         </motion.div>
 
+        {/* --- GRID STARTS --- */}
         <motion.div
           ref={ref}
-          className="grid md:grid-cols-3 gap-8"
+          className="grid md:grid-cols-4 gap-8 mb-16"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -73,10 +86,9 @@ export function Services() {
             return (
               <motion.div
                 key={index}
-                className="group rounded-lg overflow-hidden border border-border hover:border-accent-primary transition-colors"
+                className="group rounded-lg overflow-hidden border border-border hover:border-accent-primary transition-colors flex flex-col h-full"
                 variants={itemVariants}
               >
-                {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={service.image || "/placeholder.svg"}
@@ -85,18 +97,36 @@ export function Services() {
                   />
                 </div>
 
-                {/* Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="mb-3 text-accent-primary">
                     <IconComponent size={28} />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-muted leading-relaxed">{service.description}</p>
+                  <p className="text-muted leading-relaxed mb-8 flex-grow whitespace-pre-wrap">
+                    {service.description}
+                  </p>
                 </div>
               </motion.div>
             )
           })}
-        </motion.div>
+        </motion.div> 
+        {/* --- GRID ENDS --- */}
+
+        {/* --- CENTERED BUTTON OUTSIDE THE GRID --- */}
+        <div className="flex justify-center w-full">
+          <ContactPopup>
+            <motion.button
+              className="px-10 py-4 text-lg bg-accent-primary text-white font-bold rounded-lg hover:bg-accent-primary-dark transition-colors shadow-xl"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 1, duration: 0.5 }}
+            >
+              Explore Services
+            </motion.button>
+          </ContactPopup>
+        </div>
       </div>
     </section>
   )

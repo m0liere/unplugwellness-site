@@ -1,0 +1,56 @@
+<!-- ---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/navbar';
+import { ServicePage } from '../components/ServicePage';
+import { Footer } from '../components/footer';
+
+const workshopData = {
+  title: "Yoga Sessions",
+  subtitle: "Move and breathe together",
+  description: "In person, hybrid, or remote movement practice designed for desk workers and tailored to your team. I will work with you, everything below is a suggestion, we can be as creative as you want.",
+  sectiontitle1: "Session Options",
+  sectiontitle2: "Outcomes",
+  sectiontitle3: "Logistics",
+  features: [
+    { 
+      title: "30-Minute Flow", 
+      description: 
+      `Best for: Mid-day reset, lunch break sessions, pre-meeting energizer\n
+       Structure
+          - 5 min: Breathing + centering
+          - 20 min: targeted movement
+          - 5 min: Guided Relaxation\n
+       Outcome: Team returns to work with less physical tension, clearer focus, regulated nervous system`
+    },
+    { 
+      title: "60-Minute Practice", 
+      description: 
+      `Best for: Morning team-building, after-hours wind-down, monthly wellness ritual\n
+       Structure:
+          - 10 min: Breathwork + intention setting
+          - 40 min: Full-body practice (progressive release from head to toe)
+          - 10 min: Extended relaxation + integration\n
+       Outcome: Deeper release, team bonding through shared practice, tangible experience of mind-body connection`
+    },
+    {
+      title: "Who This Is For",
+      description: "Ideal for tech teams and remote-first companies where employees work 6-10+ hours at desks. Best for groups of 8-20 participants to allow for personalized ergonomic attention."
+    }
+  ],
+  outcomes: [
+    "Understand biomechanics causing pain (and how to reverse it)",
+    "Adjust workstations optimized to reduce strain",
+    "Targeted stretches for immediate relief",
+    "Breathwork techniques for stress regulation",
+    "Build a personal daily practice (5-15 mins)",
+    "Reduced pain-related productivity loss & higher energy"
+  ],
+  logistics: "Format: 2 consecutive days or split across 2 weeks (3 hours/day).\n\nIncludes: Workstation assessments, printed guides, and follow-up resources.\n\nInvestment: Contact for pricing. Wellness stipend or professional development budget eligible."
+};
+---
+
+<Layout title="Workshops | Unplug Wellness">
+  <Navbar client:load />
+  <ServicePage client:load {...workshopData} />
+  <Footer client:load showCTA={false} />
+</Layout> -->
