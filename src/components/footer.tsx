@@ -54,7 +54,7 @@ export function Footer({ showCTA = true }: FooterProps) {
         {/* Logo */}
         <div className="flex items-center">
           <img 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unplug-white-cropped-4xq9eej3r9eWGpoAFU7SfXVHduYvef.png" 
+            src="/unplugwithroei-white.png" 
             alt="Unplug Wellness" 
             className="w-auto max-w-[150px] md:max-w-[180px] h-auto block brightness-100"
           />

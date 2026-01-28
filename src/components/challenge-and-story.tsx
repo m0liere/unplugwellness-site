@@ -94,19 +94,19 @@ export function ChallengeAndStory() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-balance">Story</h2>
             {/* ... Rest of your story text ... */}
             <p className="text-muted text-lg leading-relaxed mb-4">
-              {"I'm Roei. I'm an ITOps and DevOps engineer, a Yoga and Mat Pilates Instructor and Certified Office Ergonomics Evaluator."}
+              {"I'm Roei. I'm an ITOps and DevOps engineer, a Yoga and Mat Pilates Instructor, Certified Office Ergonomics Evaluator, and your posture coach."}
             </p>
             <p className="text-muted text-lg leading-relaxed mb-4">
-              {"I have worked at a big 4 consulting firm, early stage and hypergrowth unicorn startups, and participated in the pre to post IPO journey of a large Fintech company. I've been in these environments of high intensity, pressure and increasing demands and deadlines."}
+              {"I have worked at a big 4 consulting firm, early stage and hypergrowth unicorn startups, and participated in the pre to post IPO journey of a large Fintech company. I've been in these environments of high intensity, pressure, and increasing demands and deadlines that keep us sitting at our desks all day."}
             </p>
             <p className="text-muted text-lg leading-relaxed mb-4">
-               {"I know what it feels like. I know how easy it can be to be swept up in the waves of stress, anxiety and excitement. It's easy to live in your mind and lose awareness of your body. It's easy to keep going without proper rest until you burn out."}
+               {"I know what it feels like. I know how easy it can be to be swept up in the waves of stress, anxiety and excitement. It's easy to live in your mind and lose awareness of your body. It's easy to adapt to the workstation and lose control of your posture."}
             </p>
               <p className="text-muted text-lg leading-relaxed mb-4">
-               {"I started Unplug Wellness to bring the tools of yoga, meditation, breath work and mindfulness to all the desk workers who need help reconnecting with their bodies, breath, minds, and souls."}
+               {"I'm here to help you reconnect with your body and reverse the damage done to it by sitting for so long hunched over your computer."}
             </p>
             <p className="text-muted text-lg leading-relaxed">
-               {"I want to educate and connect with the humans behind the computers so they can learn to be in control of their musculoskeletal and mental health and bring the most energized, productive, and present versions of themselves to work and life."}
+               {"I want to educate and connect with you — the human behind the computer — so you can learn to be in control of your musculoskeletal and mental health and bring the most energized, productive, and present version of yourself to work and life."}
             </p>
           </div>
         </motion.div>
