@@ -7,31 +7,24 @@ import { ContactPopup } from "./ContactPopup"
 
 const services = [
   {
-    icon: PersonStanding,
-    title: "Posture Coaching",
-    description: "Our workstations make our bodies adapt to the desk and computer and give us poor posture. My posture coaching sessions help reverse that. Learn exactly how your workstation is impacting your body and the movements and stretches to fix the damage.",
-    image: "/evolution-of-deskman.png",
-    href: "/yoga"
-  },
-  {
     icon: Zap,
     title: "Office Yoga",
-    description: "Mindful yoga sessions designed for desk workers to improve their posture, tailored for your team. Help your employees prevent pain, discomfort, and injury and reconnect to their body and breath. No experience required. Virtual or in-person.",
+    description: "Yoga sessions designed specifically for desk workers focused on posture, movement, and reconnecting to the body.\n\nTailored for your team, no experience required. Book a one-off session to give your team an immediate reset, or lock in a monthly cadence to build lasting habits.\n\nVirtual or in-person.",
     image: "/yoga-class-wellness.jpg",
     href: "/yoga"
   },
   {
     icon: BookOpen,
     title: "Wellness Workshop",
-    description: "A 2-day workshop that teaches your team tools to build sustainable work habits for optimal physical and mental health.\nDay 1: Musculoskeletal Health - Eronomics education and yoga for desk workers.\nDay 2: Mental Health - Mindfulness breathwork and meditation for stress reduction and burnout prevention.\nVirtual or in-person.",
+    description: "A 2-day workshop that gives your team the tools to build sustainable work habits for long-term physical and mental health.\n\nDay 1: Musculoskeletal Health — posture and ergonomics education and yoga for desk workers.\n\nDay 2: Mental Health — breathwork and meditation for stress reduction and burnout prevention.\n\nVirtual or in-person.",
     image: "/wellness-workshop-group.jpg",
     href: "/workshop"
   },
   {
-    icon: MonitorPlay,
-    title: "Ergonomics Education",
-    description: "Fix the setup before it breaks the body. Certified ergonomics assessments to adjust workstations for preventing desk pain before it becomes chronic injury. Individual evaluations or team education sessions. Virtual or in-person.",
-    image: "/ergonomic-workspace-setup.jpg",
+    icon: PersonStanding,
+    title: "12-Week Workforce Transformation",
+    description: "A structured 12-session program that builds a healthier, more resilient workforce from the ground up.\n\nEach session combines movement with education covering posture, ergonomics, stress physiology, and breathwork so employees don't just feel better in the moment, they understand why and know how to sustain it.\n\nBy the end, your team has reduced musculoskeletal discomfort, ergonomics-informed workstations, and a toolkit for managing stress and preventing burnout.\n\nVirtual or in-person.",
+    image: "/evolution-of-deskman.png",
     href: "#services",
     buttonText: "Coming Soon"
   },
@@ -76,7 +69,7 @@ export function Services() {
         {/* --- GRID STARTS --- */}
         <motion.div
           ref={ref}
-          className="grid md:grid-cols-4 gap-8 mb-16"
+          className="grid md:grid-cols-3 gap-8 mb-16"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}

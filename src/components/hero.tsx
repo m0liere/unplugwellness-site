@@ -9,7 +9,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/placeholder-roei.jpg")',
+          backgroundImage: 'url("/hero-shoot.jpeg")',
         }}
       >
         <div className="absolute inset-0 bg-black/40" />
@@ -17,7 +17,7 @@ export function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 text-center max-w-3xl px-4 mt-40"
+        className="relative z-10 text-center max-w-3xl px-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -36,7 +36,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Every day we plug into our workstations and our body adapts with poor posture. Unplug from your desk with me and we will fix it together.
+          Electronics recharge by plugging in. Humans recharge by unplugging.
+          <br />
+          Unplug from your desk with me and reconnect to your body, your breath, and yourself.
         </motion.p>
       </motion.div>
     </section>

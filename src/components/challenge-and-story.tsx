@@ -31,7 +31,13 @@ export function ChallengeAndStory() {
               In today's world, we're constantly connected, always on, living in our minds. Often we lose awareness of our bodies until its screaming at us with pain and discomfort.
             </p>
             <p className="text-muted text-lg leading-relaxed mb-8">
-              This 21 Day challenge will guide you to building a daily movement habit inspired by yoga and Pilates to address the specific impacts that sitting at your desk all day has on your body. You will also learn ergonomics principles so you can adjust your workstations to have a foundation for healthy posture and work habits.
+            In today's world we're constantly connected, always on, living in our minds. Often we lose awareness of our bodies until they're screaming at us with pain and discomfort.
+            <br />
+            <br />
+            The 21-Day Desk Worker Reset guides you through your entire body — teaching you what sitting 8+ hours a day is actually doing to you, and giving you the movement, breathwork, and ergonomics tools to reverse it.
+            <br />
+            <br />
+            15 minutes a day. 21 days. A completely different relationship with your body.
             </p>
 
             {/* Email Form Integration */}
@@ -85,28 +91,24 @@ export function ChallengeAndStory() {
         >
           <div className="relative w-full rounded-lg overflow-hidden border border-border order-2 md:order-1">
             <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250912-WA0048-tx8AX9lXEcavtiUxJxKLZ9AsrgYR6M.jpg" 
-              alt="The Story" 
+              src="/about-shoot.jpeg"
+              alt="The Story"
               className="w-full h-auto block" 
             />
           </div>
           <div className="order-1 md:order-2" id="story">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-balance">Story</h2>
-            {/* ... Rest of your story text ... */}
             <p className="text-muted text-lg leading-relaxed mb-4">
-              {"I'm Roei. I'm an ITOps and DevOps engineer, a Yoga and Mat Pilates Instructor, Certified Office Ergonomics Evaluator, and your posture coach."}
+              {"I'm Roei, an engineer who became a yoga and Pilates instructor, and a Certified Office Ergonomics Evaluator."}
             </p>
             <p className="text-muted text-lg leading-relaxed mb-4">
-              {"I have worked at a big 4 consulting firm, early stage and hypergrowth unicorn startups, and participated in the pre to post IPO journey of a large Fintech company. I've been in these environments of high intensity, pressure, and increasing demands and deadlines that keep us sitting at our desks all day."}
+              {"I've worked at a Big 4 consulting firm, early stage startups, and through the pre to post-IPO journey of a large fintech company. I know what it feels like to be swept up in the waves of pressure, deadlines, and intensity — living in your mind, completely disconnected from your body."}
             </p>
             <p className="text-muted text-lg leading-relaxed mb-4">
-               {"I know what it feels like. I know how easy it can be to be swept up in the waves of stress, anxiety and excitement. It's easy to live in your mind and lose awareness of your body. It's easy to adapt to the workstation and lose control of your posture."}
-            </p>
-              <p className="text-muted text-lg leading-relaxed mb-4">
-               {"I'm here to help you reconnect with your body and reverse the damage done to it by sitting for so long hunched over your computer."}
+              {"That disconnection has a cost. It shows up as tension, pain, poor posture, burnout. It sneaks up on you until your body is the one forcing you to stop."}
             </p>
             <p className="text-muted text-lg leading-relaxed">
-               {"I want to educate and connect with you — the human behind the computer — so you can learn to be in control of your musculoskeletal and mental health and bring the most energized, productive, and present version of yourself to work and life."}
+              {"I built Unplug With Roei because nobody in these environments is talking about this. I'm here to change that — to educate the human behind the computer, and help you bring the most present, healthy, and capable version of yourself to your work and your life."}
             </p>
           </div>
         </motion.div>
