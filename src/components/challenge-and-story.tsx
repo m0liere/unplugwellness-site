@@ -27,9 +27,6 @@ export function ChallengeAndStory() {
           {/* Text & Form Column */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-balance">Challenge</h2>
-            <p className="text-muted text-lg leading-relaxed mb-4">
-              In today's world, we're constantly connected, always on, living in our minds. Often we lose awareness of our bodies until its screaming at us with pain and discomfort.
-            </p>
             <p className="text-muted text-lg leading-relaxed mb-8">
             In today's world we're constantly connected, always on, living in our minds. Often we lose awareness of our bodies until they're screaming at us with pain and discomfort.
             <br />
