@@ -28,7 +28,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Reclaim your body.
+          Reclaim your presence.
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-muted leading-relaxed text-balance"
@@ -36,9 +36,16 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Electronics recharge by plugging in. Humans recharge by unplugging.
-          <br />
-          Unplug from your desk with me and reconnect to your body, your breath, and yourself.
+          I spent a decade in tech and burned out. What brought me back was getting
+          into my body, out of my head, and into the rest of my life.
+        </motion.p>
+        <motion.p
+          className="mt-6 text-sm md:text-base text-white/60 text-balance"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          Yoga and Mat Pilates instructor · Certified Office Ergonomics Evaluator
         </motion.p>
       </motion.div>
     </section>

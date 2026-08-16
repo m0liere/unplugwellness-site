@@ -7,28 +7,31 @@ import { ContactPopup } from "./ContactPopup"
 
 const services = [
   {
-    icon: Zap,
-    title: "Office Yoga",
-    description: "Yoga sessions designed specifically for desk workers focused on posture, movement, and reconnecting to the body.\n\nTailored for your team, no experience required. Book a one-off session to give your team an immediate reset, or lock in a monthly cadence to build lasting habits.\n\nVirtual or in-person.",
-    image: "/yoga-class-wellness.jpg",
-    href: "/yoga"
+    icon: BookOpen,
+    title: "The 21-Day Reset",
+    description: "Reclaim Your Body. Twenty-one days, fifteen minutes a day.\n\nYou will learn what desk work has actually been doing to your body, and how to read what yours is telling you, so you stop guessing which stretch or which chair is supposed to fix it.\n\nSelf-guided. Coming this fall.",
+    image: "/evolution-of-deskman.png",
+    href: "/challenge",
+    buttonText: "Learn more"
   },
   {
-    icon: BookOpen,
-    title: "Wellness Workshop",
-    description: "A 2-day workshop that gives your team the tools to build sustainable work habits for long-term physical and mental health.\n\nDay 1: Musculoskeletal Health — posture and ergonomics education and yoga for desk workers.\n\nDay 2: Mental Health — breathwork and meditation for stress reduction and burnout prevention.\n\nVirtual or in-person.",
+    icon: Zap,
+    title: "The Workshop",
+    description: "A half or full day with your team.\n\nMovement, ergonomics, breath, and the physiology of stress, taught so people understand it and can keep it after I leave.\n\nBuilt for offsites and for teams that sit all day. Virtual or in person.",
     image: "/wellness-workshop-group.jpg",
-    href: "/workshop"
+    contact: true,
+    buttonText: "Get in touch"
   },
   {
     icon: PersonStanding,
-    title: "12-Week Workforce Transformation",
-    description: "A structured 12-session program that builds a healthier, more resilient workforce from the ground up.\n\nEach session combines movement with education covering posture, ergonomics, stress physiology, and breathwork so employees don't just feel better in the moment, they understand why and know how to sustain it.\n\nBy the end, your team has reduced musculoskeletal discomfort, ergonomics-informed workstations, and a toolkit for managing stress and preventing burnout.\n\nVirtual or in-person.",
-    image: "/evolution-of-deskman.png",
-    href: "#services",
-    buttonText: "Coming Soon"
+    title: "Working Together",
+    description: "One to one and small group work for people who perform under pressure.\n\nThe body first, then the noise, then the part most people never get to.",
+    image: "/yoga-class-wellness.jpg",
+    contact: true,
+    buttonText: "Get in touch"
   },
 ]
+
 
 export function Services() {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true })
@@ -63,7 +66,7 @@ export function Services() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">Work with me</h2>
         </motion.div>
 
         {/* --- GRID STARTS --- */}
@@ -98,6 +101,21 @@ export function Services() {
                   <p className="text-muted leading-relaxed mb-8 flex-grow whitespace-pre-wrap">
                     {service.description}
                   </p>
+
+                  {service.contact ? (
+                    <ContactPopup>
+                      <button className="w-full px-6 py-3 bg-accent-primary text-white font-semibold rounded-lg hover:bg-accent-primary-dark transition-colors">
+                        {service.buttonText}
+                      </button>
+                    </ContactPopup>
+                  ) : (
+                    <a
+                      href={service.href}
+                      className="block w-full text-center px-6 py-3 bg-accent-primary text-white font-semibold rounded-lg hover:bg-accent-primary-dark transition-colors"
+                    >
+                      {service.buttonText}
+                    </a>
+                  )}
                 </div>
               </motion.div>
             )
@@ -105,21 +123,6 @@ export function Services() {
         </motion.div> 
         {/* --- GRID ENDS --- */}
 
-        {/* --- CENTERED BUTTON OUTSIDE THE GRID --- */}
-        <div className="flex justify-center w-full">
-          <ContactPopup>
-            <motion.button
-              className="px-10 py-4 text-lg bg-accent-primary text-white font-bold rounded-lg hover:bg-accent-primary-dark transition-colors shadow-xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 10 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 1, duration: 0.5 }}
-            >
-              Explore Services
-            </motion.button>
-          </ContactPopup>
-        </div>
       </div>
     </section>
   )

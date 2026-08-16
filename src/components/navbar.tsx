@@ -28,9 +28,9 @@ export function Navbar() {
             About
           </a>
           <a href="/#services" className="text-white hover:text-accent-primary transition-colors">
-            Services
+            Work with me
           </a>
-          <a href="/#challenge" className="text-white hover:text-accent-primary transition-colors">
+          <a href="/challenge" className="text-white hover:text-accent-primary transition-colors">
             The Challenge
           </a>
           <a href="https://unplugwithroei.substack.com" className="text-white hover:text-accent-primary transition-colors">
@@ -61,11 +61,14 @@ export function Navbar() {
           <a href="/#story" className="block text-white hover:text-accent-primary transition-colors">
             About
           </a>
-          <a href="/#challenge" className="block text-white hover:text-accent-primary transition-colors">
+          <a href="/challenge" className="block text-white hover:text-accent-primary transition-colors">
             The Challenge
           </a>
-          <a href="/#work" className="block text-white hover:text-accent-primary transition-colors">
+          <a href="/#services" className="block text-white hover:text-accent-primary transition-colors">
             Work with me
+          </a>
+          <a href="https://unplugwithroei.substack.com" className="block text-white hover:text-accent-primary transition-colors">
+            Substack
           </a>
           <ContactPopup>
             <motion.button 

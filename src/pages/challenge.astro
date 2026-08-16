@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/navbar';
+import { Challenge } from '../components/challenge';
+import { Footer } from '../components/footer';
+---
+
+<Layout title="The 21-Day Reset | Unplug with Roei">
+	<Navbar client:load />
+	<Challenge client:load />
+	<Footer client:load />
+</Layout>
