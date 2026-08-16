@@ -36,8 +36,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          I spent a decade in tech and burned out. My healing journey brought me back
-          to my body, got me out of my head, and back to the present moment.
+          I spent a decade in tech and burned out. My healing journey reconnected me
+          to my body, got me out of my head, and brought me back to the present
+          moment. And now I want to help you do the same.
         </motion.p>
         <motion.p
           className="mt-6 text-sm md:text-base text-white/60 text-balance"
