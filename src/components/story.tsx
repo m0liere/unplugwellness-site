@@ -22,7 +22,7 @@ const beats = [
   },
   {
     label: "Not only desk workers",
-    body: <>{"Athletes in a training block. Actors and musicians in rehearsal. Executives and leaders in weeks that never let up. Anyone at that pace ends up "}<strong className="text-white">performing on a body they stopped listening to.</strong></>,
+    body: <>{"Athletes in a training block. Actors and musicians in rehearsal. Students in exam season. Executives and leaders in weeks that never let up. Anyone at that pace ends up "}<strong className="text-white">performing on a body they stopped listening to.</strong></>,
   },
   {
     label: "Why Unplug",

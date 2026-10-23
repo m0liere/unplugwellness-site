@@ -13,10 +13,10 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight">
-            Movement, breath, and ergonomics for people who work at a desk.
+            Movement, breath, and ergonomics for people hunched over laptops and phones.
           </h1>
           <p className="text-lg md:text-xl text-muted leading-relaxed mb-6">
-            I spent a decade behind a computer and hunched over my phone, and I burned
+            I spent a decade in tech, sitting at a desk behind a computer, and I burned
             out. My healing journey reconnected me to my body, got me out of my head,
             and brought me back to the present moment. And now I want to help you do
             the same.{" "}
