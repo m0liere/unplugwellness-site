@@ -11,41 +11,45 @@ const sectionVariants = {
   },
 }
 
+const beats = [
+  {
+    label: "Who I am",
+    body: <>{"I'm Roei. "}<strong className="text-white">I spent a decade in tech and burned out.</strong>{" That started my healing journey, which led me to become a yoga and Mat Pilates instructor and a Certified Office Ergonomics Evaluator."}</>,
+  },
+  {
+    label: "The cost",
+    body: <>{"Big 4 consulting. Early-stage startups. A large fintech, from pre- to post-IPO. I know the pressure, the deadlines, and the intensity. I lived in my mind and lost touch with my body. For me, it showed up as tension, pain, and poor posture. It built slowly. "}<strong className="text-white">Then my body made me stop.</strong>{" "}<strong className="text-white">Modern work keeps us in our minds and out of our bodies.</strong></>,
+  },
+  {
+    label: "Not only desk workers",
+    body: <>{"Athletes in a training block. Actors and musicians in rehearsal. Executives and leaders in weeks that never let up. Anyone at that pace ends up "}<strong className="text-white">performing on a body they stopped listening to.</strong></>,
+  },
+  {
+    label: "Why Unplug",
+    body: <>{"In these environments, the body is rarely the focus. I want to change that. "}<strong className="text-white">I teach the human behind the screen,</strong>{" so you can bring a present, healthy, and capable self to your work and your life."}</>,
+  },
+]
+
 export function Story() {
   return (
     <section className="py-24 bg-background px-4 md:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-2xl mx-auto">
         <motion.div
-          className="grid md:grid-cols-2 gap-12 items-center"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <div className="relative w-full rounded-lg overflow-hidden border border-border order-2 md:order-1">
-            <img 
-              src="/about-shoot.jpeg"
-              alt="The Story"
-              className="w-full h-auto block" 
-            />
-          </div>
-          <div className="order-1 md:order-2" id="story">
+          <div id="story">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-balance">Story</h2>
-            <p className="text-muted text-lg leading-relaxed mb-4">
-              {"I'm Roei, an engineer who became a yoga and Pilates instructor, and a Certified Office Ergonomics Evaluator."}
-            </p>
-            <p className="text-muted text-lg leading-relaxed mb-4">
-              {"I've worked at a Big 4 consulting firm, early stage startups, and through the pre to post-IPO journey of a large fintech company. I know what it feels like to be swept up in the waves of pressure, deadlines, and intensity — living in your mind, completely disconnected from your body."}
-            </p>
-            <p className="text-muted text-lg leading-relaxed mb-4">
-              {"That disconnection has a cost. It shows up as tension, pain, poor posture, burnout. It sneaks up on you until your body is the one forcing you to stop."}
-            </p>
-            <p className="text-muted text-lg leading-relaxed mb-4">
-              {"It isn't only desk workers. Anyone moving at that pace, through rehearsals, training blocks, or weeks that never let up, ends up in the same place: performing on a body they stopped listening to a long time ago."}
-            </p>
-            <p className="text-muted text-lg leading-relaxed">
-              {"I built Unplug With Roei because nobody in these environments is talking about this. I'm here to change that — to educate the human behind the computer, and help you bring the most present, healthy, and capable version of yourself to your work and your life."}
-            </p>
+            <div className="space-y-8">
+              {beats.map((beat) => (
+                <div key={beat.label}>
+                  <h3 className="text-accent-primary font-semibold uppercase tracking-wider text-sm mb-2">{beat.label}</h3>
+                  <p className="text-muted text-lg leading-relaxed">{beat.body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>

@@ -8,8 +8,12 @@ import { ContactPopup } from "./ContactPopup"
 const services = [
   {
     icon: BookOpen,
-    title: "The 21-Day Reset",
-    description: "Reclaim Your Body. Twenty-one days, fifteen minutes a day.\n\nYou will learn what desk work has actually been doing to your body, and how to read what yours is telling you, so you stop guessing which stretch or which chair is supposed to fix it.\n\nSelf-guided. Coming this fall.",
+    title: "The 21-Day Desk Worker Reset",
+    description: <>
+      <p><strong className="text-white">21 days. 15 minutes a day.</strong></p>
+      <p>Learn what desk work does to your body, and how to read what yours is telling you. <strong className="text-white">Stop guessing which stretch or chair will fix it.</strong></p>
+      <p>Self-guided. Coming soon.</p>
+    </>,
     image: "/evolution-of-deskman.png",
     href: "/challenge",
     buttonText: "Learn more"
@@ -17,7 +21,11 @@ const services = [
   {
     icon: Zap,
     title: "The Workshop",
-    description: "A half or full day with your team.\n\nMovement, ergonomics, breath, and the physiology of stress, taught so people understand it and can keep it after I leave.\n\nBuilt for offsites and for teams that sit all day. Virtual or in person.",
+    description: <>
+      <p><strong className="text-white">90 minutes for offices, schools, and organizations.</strong></p>
+      <p>Why the neck, shoulders, and lower back carry the load. How to set up a workstation. How breath settles a stressed nervous system. Short teaching, short practice, no mats needed.</p>
+      <p><strong className="text-white">Want a full class as well?</strong> I can bring mats and teach a yoga session built on the same material.</p>
+    </>,
     image: "/wellness-workshop-group.jpg",
     contact: true,
     buttonText: "Get in touch"
@@ -25,7 +33,10 @@ const services = [
   {
     icon: PersonStanding,
     title: "Working Together",
-    description: "One to one and small group work for people who perform under pressure.\n\nThe body first, then the noise, then the part most people never get to.",
+    description: <>
+      <p><strong className="text-white">One to one and small groups,</strong> for people who perform under pressure.</p>
+      <p>The body first. Then the noise. Then the part most people never get to.</p>
+    </>,
     image: "/yoga-class-wellness.jpg",
     contact: true,
     buttonText: "Get in touch"
@@ -57,7 +68,7 @@ export function Services() {
   }
 
   return (
-    <section id="services" className="py-24 bg-background px-4 md:px-6">
+    <section id="services" className="py-24 bg-surface px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -98,9 +109,9 @@ export function Services() {
                     <IconComponent size={28} />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-muted leading-relaxed mb-8 flex-grow whitespace-pre-wrap">
+                  <div className="text-muted leading-relaxed mb-8 flex-grow space-y-3">
                     {service.description}
-                  </p>
+                  </div>
 
                   {service.contact ? (
                     <ContactPopup>
