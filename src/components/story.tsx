@@ -26,7 +26,7 @@ const beats = [
   },
   {
     label: "Why Unplug",
-    body: <>{"In these environments, the body is rarely the focus. I want to change that. "}<strong className="text-white">I teach the human behind the screen,</strong>{" so you can bring a present, healthy, and capable self to your work and your life."}</>,
+    body: <>{"In these environments, the body is rarely the focus. I want to change that. "}<strong className="text-white">I teach the humans behind the screens to listen to their bodies again,</strong>{" with movement, breath, and ergonomics, so they can bring present, healthy, and capable selves to their work and their lives."}</>,
   },
 ]
 
